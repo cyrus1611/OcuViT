@@ -1,0 +1,27 @@
+# Node / Frontend
+node_modules/
+dist/
+.env.local
+.env.*.local
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+backend/uploads/
+backend/results/attention_maps/*.png
+
+# Large Model Weights (>100MB cannot be pushed to standard GitHub without Git LFS)
+best_checkpoint.pth
+model.safetensors
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

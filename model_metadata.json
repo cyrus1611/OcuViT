@@ -1,0 +1,37 @@
+{
+    "project": "Vision Transformer-Based Ophthalmic Disease Detection and Advisory System",
+    "base_model": "google/vit-base-patch16-224",
+    "dataset": "ODIR ophthalmic dataset",
+    "classification_type": "multi-label",
+    "classes": [
+        "Normal",
+        "Diabetes",
+        "Glaucoma",
+        "Cataract",
+        "AMD",
+        "Hypertension",
+        "Myopia",
+        "Other"
+    ],
+    "num_classes": 8,
+    "input_size": "224x224",
+    "split": {
+        "train": "70%",
+        "validation": "15%",
+        "test": "15%",
+        "unit": "patient"
+    },
+    "best_validation_macro_f1": 0.5297525182551845,
+    "test_macro_f1": 0.5323759493275816,
+    "test_micro_f1": 0.5441717791411043,
+    "thresholds": {
+        "Normal": 0.4000000059604645,
+        "Diabetes": 0.30000001192092896,
+        "Glaucoma": 0.5,
+        "Cataract": 0.44999998807907104,
+        "AMD": 0.699999988079071,
+        "Hypertension": 0.25,
+        "Myopia": 0.3499999940395355,
+        "Other": 0.3499999940395355
+    }
+}
